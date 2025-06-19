@@ -81,7 +81,7 @@ This project includes a Jupyter Notebook demonstrating the full pipeline:
 - Model training and evaluation
 - Model deployment preparation
 
-🔗 **View the notebook:** [notebook.ipynb](./notebook.ipynb)
+🔗 **View the notebook:** [Jupyter Notebook](./Principles_of_Data_Science.ipynb)
 
 ---
 
@@ -110,7 +110,7 @@ To launch the Jupyter Notebook:
 jupyter notebook
 ```
 
-Open the file `notebook.ipynb` and run through the cells to reproduce the results.
+Open the file `Principles_of_Data_Science.ipynb` and run through the cells to reproduce the results.
 
 ---
 
