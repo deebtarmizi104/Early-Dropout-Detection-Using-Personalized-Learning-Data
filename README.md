@@ -38,24 +38,32 @@ Key insight: ~20% of students were classified as likely to drop out.
 
 ---
 
-## 🤖 Models Used
+## 🔍 Methodology
 
-We trained four machine learning models:
+### 🔧 Data Preprocessing
+- Encoding categorical variables (one-hot & ordinal)
+- Feature scaling (for logistic regression)
+- Feature engineering (e.g. Learning Efficiency, Low Engagement flags)
+- Handling class imbalance with SMOTE
+
+### 📊 Exploratory Data Analysis
+- Boxplots, bar plots, pie charts, and stacked bar charts
+- Insights into demographic distributions and engagement behaviors
+
+### 🤖 Model Training
+Four models were evaluated:
 - Logistic Regression
 - Random Forest
 - Gradient Boosting
 - CatBoost Classifier
 
-> **SMOTE** was applied to address class imbalance before training.
-
-| Model             | Accuracy | AUC-ROC | F1-Score |
-|------------------|----------|---------|----------|
-| Logistic Regression | 0.76     | 0.76    | 0.75     |
-| Random Forest       | 0.88     | 0.88    | 0.86     |
-| Gradient Boosting   | 0.84     | 0.85    | 0.82     |
-| CatBoost Classifier | 0.86     | 0.85    | 0.83     |
-
-> ✅ **Random Forest** had the best recall (ideal for early intervention), while **CatBoost** provided the best balance of performance and interpretability.
+Performance Metrics:
+| Model | Accuracy | AUC-ROC | Precision | Recall | F1-Score |
+|-------|----------|---------|-----------|--------|----------|
+| Logistic Regression | 0.196 | 0.497 | 0.196 | **1.000** | 0.327 |
+| Random Forest | 0.800 | 0.497 | 0.222 | 0.010 | 0.020 |
+| Gradient Boosting | **0.804** | **0.508** | 0.000 | 0.000 | 0.000 |
+| CatBoost Classifier | 0.802 | 0.494 | 0.250 | 0.005 | 0.010 |
 
 ---
 
