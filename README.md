@@ -89,7 +89,7 @@ This project includes a Jupyter Notebook demonstrating the full pipeline:
 - Model training and evaluation
 - Model deployment preparation
 
-🔗 **View the notebook:** [Jupyter Notebook](./Principles_of_Data_Science.ipynb)
+🔗 **View the notebook:** [Jupyter Notebook](./early_dropout_detection.ipynb)
 
 ---
 
